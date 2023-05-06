@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <math.h>
+
+int main () {
+
+float a, b, c, area, pi = 3.1415; 
+
+int opcao = 0;
+
+printf ("Informe qual forma voce gostaria de calcular a area: \n");
+printf ("-----------------------------------------------------\n");
+printf ("1- AREA DO QUADRADO: \n");
+printf ("2- AREA DO RETANGULO: \n");
+printf ("3- AREA DO CIRCULO: \n");
+printf ("4- AREA DO TRAPEZIO: \n");
+printf ("5- AREA DO TRIANGULO: \n");
+
+scanf ("%d", &opcao);
+
+switch (opcao)
+{
+    case 1:
+        printf ("Informe o lado do quadrado: \n");
+        scanf ("%f", &a);
+        area = a*a;
+        printf ("Area: %.2f",  area);
+    break;
+
+    case 2:
+        printf ("Informe a base e a altura do retangulo: \n");
+        scanf ("%f%f", &a, &b);
+        area = a*b;
+        printf ("Area: %.2f",  area);
+    break;
+
+    case 3:
+        printf ("Informe o raio: \n");
+        scanf ("%f", &a);
+        area = pi*pow(a,2);
+        printf ("Area: %.2f",  area);
+    break;
+
+    case 4:
+        printf ("Informe a base maior, a base menor e a altura do trapezio, respectivamente: \n");
+        scanf ("%f%f%f", &a, &b, &c);
+        area = ((a+b)*c)/2;
+        printf ("Area: %.2f",  area);
+    break;
+
+    case 5:
+        printf ("Informe a base e altura do triangulo: \n");
+        scanf ("%f%f", &a, &b);
+        area = (a+b)/2;
+        printf ("Area: %.2f",  area);
+    break;
+
+}
+}
