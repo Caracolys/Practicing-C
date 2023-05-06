@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <conio.h>
+
+int main () {
+
+// 3 pessoas - sexo e altura delas - faz calculos com as informações//
+
+float alturafem, alturamasc, maior=0, menor=9, soma=0, media;
+int cont=0, contf=0, contm=0;
+char sex;
+
+//clrscr()
+
+while (cont<3)
+{
+	printf ("\n Insira o sexo (M: Masculino e F: Feminino): \n");
+	sex=toupper(getch());  // pega um caracter e deixa maiusculo
+	printf ("\n Sexo: %c", sex);
+	
+	if (sex=='M')
+{
+		printf ("\n Insira a aultura: \n");
+		scanf ("%f",  &alturamasc);
+		contm++;
+		
+	if (alturamasc>maior)
+		maior=alturamasc;
+	if (alturamasc<menor)
+		menor=alturamasc;
+}
+	else
+{
+	
+	printf ("\n Insira a aultura: \n");
+	scanf ("%f",  &alturafem);
+	contf++;
+		
+	if (alturafem>maior)
+		maior=alturafem;
+	if (alturafem<menor)
+		menor=alturafem;
+	soma=soma+alturafem;
+	
+}
+
+cont++;
+
+}
+
+media=soma/contf;
+
+printf ("A maior altura eh %.1f", maior);
+printf ("A menor altura eh %.1f", menor);
+printf ("A media da altura das mulheres eh %f", media);
+printf ("O numero de homens eh %d", contm);
+
+return 0;
+		
+}
