@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+
+int idade, idadeanterior, i = 0, somaidade = 0, maioridade, menoridade;
+float media; 
+
+while(idade>0){
+
+	printf("Insira a idade: \n");
+	
+	scanf("%d", &idade);
+	if (i==0)
+	{
+		menoridade = idade;
+		maioridade = idade;
+	}
+	
+	i++;
+	
+	somaidade = somaidade + idade;
+	
+	if (idade>maioridade)
+	
+		maioridade = idade;
+
+	if (idade<menoridade && idade!=0)
+	
+		menoridade = idade;
+}
+
+
+media = somaidade/(i-1);
+
+printf("O Maior eh: %d \n", maioridade);
+printf("O Menor eh: %d \n", menoridade);
+printf("a media eh: %f \n", media);
+
+return 0; // pausar terminal
+
+}
