@@ -9,8 +9,8 @@ int main() {
         if (values % 2 == 0) {
             even++;
     }
-    
-    printf("%d valores pares", even);
+    }
+    printf("%d valores pares\n", even);
 
         return 0;
 }
