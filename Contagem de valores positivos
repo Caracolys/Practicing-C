@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+    int i = 0, posnumber = 0;
+    float number, somanum = 0, media;
+
+    while(i < 6) {
+        scanf("%f", &number);
+        somanum = somanum + number;
+        i++;
+        if (number > 0) {
+            posnumber++;
+        }
+    }
+
+    media = somanum/i;
+
+    printf("%d valores positivos\n", posnumber);
+    printf("%f \n", media);
+
+    return 0;
+}
