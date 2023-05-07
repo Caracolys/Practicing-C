@@ -1,23 +1,21 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main () {
-    int i = 0, posnumber = 0;
-    float number, somanum = 0, media;
+int main() {
+    float num;
+    int count_positive = 0;
+    float sum_positive = 0, media;
 
-    while(i < 6) {
-        scanf("%f", &number);
-        somanum = somanum + number;
-        i++;
-        if (number > 0) {
-            posnumber++;
+    for (int i = 0; i < 6; i++) {
+        scanf("%f", &num);
+        if (num > 0) {
+            count_positive++;
+            sum_positive = sum_positive + num;
         }
     }
-
-    media = somanum/i;
-
-    printf("%d valores positivos\n", posnumber);
-    printf("%f \n", media);
+    media = sum_positive/count_positive;
+    
+    printf("%d valores positivos\n", count_positive);
+    printf("%.1f\n", media);
 
     return 0;
 }
