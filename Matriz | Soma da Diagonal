@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    float M[12][12];
+    char O; // operação
+    float sum = 0.0;
+
+    scanf(" %c", &O);
+
+    for (int i = 0; i < 12; i++) {
+        for (int j = 0; j < 12; j++) {
+            scanf("%f", &M[i][j]);
+            
+            if (j > i) { // a diagonal aparece sempre que a linha é menor que a coluna
+                sum = sum + M[i][j];
+            }
+        }
+    }
+
+    if (O == 'S') {
+        printf("%.1f\n", sum);
+    } else if (O == 'M') {
+        printf("%.1f\n", sum / 66.0);
+    }
+
+    return 0;
+}
