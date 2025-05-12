@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+int main() {
+    int N, i, j, x;
+
+    while (1) {
+        scanf("%d", &N);
+
+        if (N == 0)
+            break;
+
+        for (i = 0; i < N; i++) {
+            for (j = 0; j < N; j++) {
+                x = i + 1;
+                if (j < x)
+                    x = j + 1;
+                if (N - i < x)
+                    x = N - i;
+                if (N - j < x)
+                    x = N - j;
+
+                printf("%3d", x);
+
+                if (j < N - 1)
+                    printf(" ");
+                else
+                    printf("\n");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
