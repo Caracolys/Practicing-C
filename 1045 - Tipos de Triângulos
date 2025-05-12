@@ -6,7 +6,6 @@ int main() {
 
     scanf("%lf%lf%lf", &A, &B, &C);
 
-    // Arrange sides in decreasing order
     if (A < B) {
         temp = A;
         A = B;
@@ -23,12 +22,10 @@ int main() {
         C = temp;
     }
 
-    // Check if it forms a triangle
     if (A >= B + C) {
         printf("NAO FORMA TRIANGULO\n");
     }
     else {
-        // Check type of triangle
         if (pow(A, 2) == pow(B, 2) + pow(C, 2)) {
             printf("TRIANGULO RETANGULO\n");
         }
