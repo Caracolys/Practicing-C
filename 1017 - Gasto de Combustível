@@ -1,0 +1,18 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+int hours, speed;
+float space, fuel;
+
+scanf ("%d", &hours);
+scanf ("%d", &speed);
+
+space = speed*hours;
+
+fuel = space/12;
+
+printf ("%.3f\n", fuel);
+ 
+    return 0;
+}
