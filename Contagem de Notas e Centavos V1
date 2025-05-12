@@ -7,25 +7,20 @@ int main() {
     int noteCount[6] = {0};
     int coinCount[6] = {0};
 
-    // Read the monetary value
     scanf("%lf", &amount);
 
-    // Convert to cents to avoid floating-point precision issues
     int totalCents = (int)(amount * 100);
 
-    // Calculate the number of banknotes
     for (int i = 0; i < 6; i++) {
         noteCount[i] = totalCents / (notes[i] * 100);
         totalCents %= (notes[i] * 100);
     }
 
-    // Calculate the number of coins
     for (int i = 0; i < 6; i++) {
         coinCount[i] = totalCents / (coins[i] * 100);
         totalCents %= (int)(coins[i] * 100);
     }
 
-    // Print the result
     printf("NOTAS:\n");
     for (int i = 0; i < 6; i++) {
         printf("%d nota(s) de R$ %.2f\n", noteCount[i], notes[i] * 1.00);
