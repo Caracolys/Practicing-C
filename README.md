@@ -1,4 +1,4 @@
-<PT-Version>
+(PT-Version)
 
 Olá! Seja bem-vindo(a) ao repositório de exercícios feitos utilizando a Linguagem C (-:
 
@@ -14,7 +14,7 @@ Aqui você encontrará exercícios utilizando os comandos:
 - If (str & nmb)
 - Diversas operações lógicas como =, !=, <, >, <=, >=, ...
 
-<EN-Version>
+(EN-Version)
 
 Hello! Welcome to the repository of exercises made using C language (-:
 
