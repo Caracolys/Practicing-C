@@ -1,0 +1,29 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+double A, B, C, areatri, areacir, areatrap, areasqr, arearect, pi;
+
+pi =  3.14159;
+
+scanf ("%lf %lf %lf", &A, &B, &C);
+
+areatri = (A * C)/2;
+// A (base), C (altura)
+areacir = pi * C * C;
+// C é o raio
+areatrap = ((A+B)*C)/2;
+// A e B são bases e C é a altura
+areasqr = B * B;
+// B é o lado do quadrado
+arearect = A * B;
+// A e B são lados do retângulo
+
+printf ("TRIANGULO: %.3lf\n", areatri);
+printf ("CIRCULO: %.3lf\n", areacir);
+printf ("TRAPEZIO: %.3lf\n", areatrap);
+printf ("QUADRADO: %.3lf\n", areasqr);
+printf ("RETANGULO: %.3lf\n", arearect);
+
+    return 0;
+}
