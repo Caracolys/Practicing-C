@@ -11,3 +11,19 @@ Aqui você encontrará exercícios utilizando os comandos:
 - Case
 - If (str & nmb)
 - Diversas operações lógicas como =, !=, <, >, <=, >=, ...
+
+////////////////////////////////////////////////////
+
+Hello! Welcome to the repository of exercises made using C language (-:
+
+This was the first language I had contact with, I highly recommend it for those who are learning the fundamentals of programming logic.
+
+Here you will find exercises using the commands:
+
+- Scanf
+- Print
+- For
+- While
+- Case
+- If (str & nmb)
+- Various logical operations such as =, !=, <, >, <=, >=, ...
